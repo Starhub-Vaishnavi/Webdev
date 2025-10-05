@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+      
+        background-color:rgb(197, 198, 194);
+        color: #222;
+        margin: 0;
+
+       
+}
+h1{
+    font-style: inherit;
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-style: italic;
+}
+    .imageb img{
+        display:grid;
+        width : 100%;
+        height: 200px;
+        border-radius: 8px;
+        max-height : 250px;
+        object-fit: cover;
+        transition: transform 0.4s;
+
+
+    }
+    .imageb{
+        background: #c0b9c8;
+        box-shadow: 0 8px 16px rgba(33,128,141,0.09);
+        transition: transform 0.3s;
+        filter: grayscale(70%);
+
+        
+    }
+    .gallery{
+       display : grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       gap : 20px;
+       margin: 30px auto;
+       padding : 0 10px;
+       max-width: 1200px;
+    }
+
+    .imageb:hover img {
+        transform: scale(1.10);
+        filter: grayscale(0);
+    }
+    .imageb:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.2);
+    }
+    header {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       background: #e6f2ff;
+       padding: 20px 0;
+       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+    }
+    
+
+
+      @media (max-width: 800px) {
+  .gallery {
+   
+    grid-template-columns: 1fr 1fr;
+  }
+  .imgageb img {
+      width: 100%;
+      height: 200px;
+      max-height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.4s, filter 0.4s;
+      filter: grayscale(70%);
+
+
+  }
+}
+@media (max-width: 500px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  .imageb img {
+    height: 120px;
+  }
+  header h1 {
+    font-size: 1.2rem;
+  }
+}
+
+
+
+
+
+</style>
+
+<body>
+<header>
+    <h1> PHOTO GALLERY</h1>
+    <p>Best way to store our memories</p>
+</header>
+    <main>
+        <section class = "gallery">
+        <div class="imageb">
+            <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj8CciFM9fro-CF0ZXAYqRHHgR95250wXwqQ&s" alt = "">
+        </div>
+        <div class="imageb">
+            <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGy3FdGh_g-0u_I0LE1jyf4mtYGZRxb7Sw5A&s" alt = "">
+        </div>
+        <div class="imageb">
+            <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy_xXpR4XKwL9XUXUUVlJdaUTU3dXYu3rI8Q&s" alt = "">
+        </div>
+        <div class="imageb">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp7u_3iRrldJs9Kgf-bpXQgl0M30S7YtlMUg&s " alt = "">
+        </div>
+        <div class="imageb">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-z-GsOQ96cbG6EI0Q4v02iT5xJyQ6Nxwo-Q&s " alt = "">
+        </div>
+        <div class="imageb">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhRJ0GAKLZDTDn_q9fgTpZEzEDSWbn7h9ERw&s " alt = "">
+        </div>
+        <div class="imageb">
+             <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOcpyLIqnvTBxLk5DuVTz_3X70UCL3Gnst7Q&s" alt = "">
+        </div>
+        <div class="imageb">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvPe_0A1ecGvpO5L_OdMg9NqRdunAqbJGvFA&s " alt = "">
+        </div>
+        <div class="imageb">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyshmPViV6NUutExYIW3lEwxgjzsoboStlCw&s " alt = "">
+        </div>
+        <div class="imageb">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4uy2biT7OLioWjhOkYn_RWED-U13pjlqHlQ&s" alt = "">
+        </div>
+        <div class="imageb">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPH1LqCprSvygSnBg8e9GQSR5RxTRJ8NttxA&s " alt = "">
+        </div>
+        <div class="imageb">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvHvzBPVLbkD9mcaJyxADuXNyhvhWaWUU4lg&s " alt = "">
+        </div>
+        
+
+        </section>
+    </main>
+    <footer>
+        <p>🌟 Responsive Photo Gallery Project 🌟</p>
+        <p>Made by Vaishnavi</p>
+        
+  </footer>
+</body>
+
+</html>

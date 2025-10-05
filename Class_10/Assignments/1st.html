@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Moon Revolving Around Earth</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .space {
+      position: relative;
+      width: 260px;
+      height: 260px;
+    }
+    .earth {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background: blue;
+      border-radius: 50%;
+      top: 90px;
+      left: 90px;
+    }
+    .moon-orbit {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      top: 30px;
+      left: 30px;
+      border-radius: 50%;
+      animation: spin 4s linear infinite;
+    
+    }
+    .moon {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      background: #ccc;
+      border-radius: 50%;
+      left: 88px;
+      top: 0;
+      
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg);}
+      100% { transform: rotate(360deg);}
+    }
+  </style>
+</head>
+<body>
+  <div class="space">
+    <div class="earth"></div>
+    <div class="moon-orbit">
+      <div class="moon"></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      padding: 40px;
+      width: 400px;
+      margin: auto;
+    }
+    button{
+      width: 200px;
+      height: 200px;
+      padding: 20px;
+      margin-left: 40px;
+      background-color: rgb(9, 9, 8);
+      animation-name: button-animation;
+      animation-duration: 5s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes button-animation{
+      0%{
+   background-color: rgb(114, 0, 146);
+        transform: translate(-100px, -100px);
+      }
+    
+      50%{
+        background-color: rgb(146, 0, 32);
+        transform: translate(100px, -100px);
+      }
+
+      75%{
+        background-color: rgb(34, 139, 118);
+        transform: translate(100px, 100px);
+      }
+      100%{
+        background-color: rgb(234, 255, 0);
+        transform: translate(-100px, 100px);
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+  <button>Click</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission form</title>
+</head>
+<body>
+    
+    <style>
+        html{
+            background-color: rgb(247, 246, 243);
+        }
+        
+        .Name{
+            display:flex;
+            gap: 30px;
+            
+        }
+        h2{
+            color: rgb(0, 0, 0);
+            background-color: rgb(158, 142, 142);
+            margin-top: 0 ;
+            padding : 8px;
+            font-size: 20px;
+            border-radius: 4px;
+        }
+        h1{
+            font-size: 40px;
+            
+        }
+        .header{
+            display: flex;
+            justify-content: center;
+        }
+        .header img {
+            width: 80px;
+            height : 80px;
+        }
+        .row{
+           display: grid;
+           grid-template-columns: 1fr 1fr 1fr;
+           gap:50px;
+           margin-top: 20px;
+
+        }
+        .Personal, .Contact, .Academic{
+            font-size: 20px;;
+            padding: 15px;
+            border: 2px solid black;
+            border-radius: 8px;
+            background-color: rgb(199, 198, 198);
+        }
+        
+        .banner{
+            background: #e3f2fd;
+            color: #1769aa;
+            font-size: 1.18rem;
+            text-align: center;
+            border-radius:  8px;
+            padding : 10pxx 0 9px 0;
+            margin-bottom: 22px;
+            font-weight : 600;
+            letter-spacing: .04em;
+            box-shadow: 0px 2px 6px rgba (21, 101,192, 0.04);
+
+        }
+        .acad-row {
+            display:flex;
+            flex-wrap: wrap;
+            gap:20px;
+            margin-bottom: 12px;
+       }
+       .acad-row > div {
+                flex: 1 1 180px;
+                min-width: 180px;
+          }
+       .acad-row textarea, .acad-row input {
+        width: 100%;
+        box-sizing: border-box;
+       }
+        .achieve{
+            display : flex;
+            flex: auto;
+        }
+        .button{
+
+            font-size: 50px;
+           
+        }
+        .chacha{
+            margin-top: 20px;
+        }
+    </style>
+    
+    
+   <div class= "header">
+     <img src = "scaler-removebg-preview.png">
+     <h1>Scaler School of Technology</h1>
+    </div>
+    <div class = "banner">
+        Your Journey starts here!
+    </div>
+
+
+    <form>
+
+      <div class = "row">
+        <div>
+        <h2>Personal details</h2>
+        <div class = " Personal">
+         <div class = "Name">
+            <div class = "First">
+                <label> First Name : </label> 
+                <input type = "text"> 
+            </div>
+            <div class = "Middle">
+               <label>  Middle Name : </label>
+               <input type = "text">
+            </div>
+            <div class = "Last">
+               <label> Last Name : </label>
+               <input type = "text">
+            </div>
+        </div>
+        <div><label> Date of birth </label>
+        <input type = "date"></div>
+        <div><p>Gender : </p>
+        <label>Male</label>
+        <input type = "radio" NAME = "GENDER">
+        <label>Female</label>
+        <input type = "radio" NAME = "GENDER">
+        <label>Other</label>
+        <input type = "radio" NAME = "GENDER"></div>
+        <h4>Upload photo and signiture : </h4>
+       
+            <label > Upload photo</label>
+            <input type = "file"><br>
+            <label > Signiture</label>
+            <input type = "file">
+       
+       </div></div>
+       <div>
+       <h2> Contact details</h2>
+        <div class = "Contact">
+        <div><label>Email : </label>
+        <input type = "email"></div>
+        <label> Phone no :  </label>
+        <input type = "tel"><br>
+        <label> Alternate Phone no :  </label>
+        <input type = "tel"><br>
+        <label>  Current Address : </label>
+        <textarea></textarea>
+        <label>  Permanent Address : </label>
+        <textarea></textarea>
+        </div></div>
+        </div>
+       <div>
+
+       <div class = "chacha"><h2>Academic details</h2></div>
+        <div class = "Academic">
+        <div class="section-box">
+  <div class="acad-row">
+    <div>
+      <label>Name of School/College:</label>
+      <input type="text">
+    </div>
+    <div>
+      <label>Year of Passing:</label>
+      <input type="text">
+    </div>
+  </div>
+  <div class="acad-row">
+    <div><p>Courses</p>
+        <select>
+            <option>Software Development</optioN>
+            <option>DevOps</optioN>
+            <option>Cybersecurity</optioN>
+        </select></div>
+    <div>
+      <label>10th Marks (%/CGPA):</label>
+      <input type="text">
+    </div>
+    <div>
+      <label>12th Marks (%/CGPA):</label>
+      <input type="text">
+    </div>
+    <div>
+      <label>Entrance Exam:</label>
+      <input type="text">
+    </div>
+    <div>
+      <label>Score/Rank:</label>
+      <input type="text">
+    </div>
+  </div>
+  <div class="acad-row">
+    <div class = "achieve">
+      <label>Academic Achievements: </label>
+      <textarea ></textarea>
+    </div>
+  </div>
+
+</div>
+</div>
+   <div class = "button">
+    <button type = "submit" >Submit</Button>
+     <button type = "reset" >Reset</Button>
+    </div>
+</form>
+    
+</body>
+</html>
