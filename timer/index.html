@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <h1 class="title">⏳ Ultimate Countdown Timer</h1>
+
+    <div class="theme-switcher">
+        <span data-theme="light">☀️</span>
+        <span data-theme="dark">🌙</span>
+        <span data-theme="pastel">🌸</span>
+        <span data-theme="neon">🎮</span>
+    </div>
+
+    
+    <div class="progress-ring">
+        <div class="ring-wrap">
+            <svg class="ring-svg">
+                <circle id="progressCircle"></circle>
+            </svg>
+
+            <div class="timer-display" id="display">00:00</div>
+        </div>
+    </div>
+
+    <div class="mode-select">
+        <button class="mode-btn" data-mode="seconds">⏱ Seconds</button>
+        <button class="mode-btn" data-mode="minutes">🕰 Minutes</button>
+        <button class="mode-btn" data-mode="custom">⌛ Custom</button>
+    </div>
+
+    <div class="input-section">
+
+        <input type="number" id="secondsInput" placeholder="Enter seconds">
+        <input type="number" id="minutesInput" placeholder="Enter minutes" class="hidden">
+
+        <div id="customInputs" class="hidden custom-box">
+            <input type="number" id="hh" placeholder="HH">
+            <input type="number" id="mm" placeholder="MM">
+            <input type="number" id="ss" placeholder="SS">
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button id="startBtn">▶️ Start</button>
+        <button id="pauseBtn">⏸ Pause</button>
+        <button id="resumeBtn">🔄 Resume</button>
+        <button id="resetBtn">⏹ Reset</button>
+    </div>
+
+    <p class="quote" id="quote">✨ Ready to focus!</p>
+
+    <audio id="alertSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_3fbc5f5e67.mp3?filename=notification-113281.mp3"></audio>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

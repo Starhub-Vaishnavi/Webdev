@@ -1,0 +1,231 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #8244ff, #4f1aff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.app {
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    backdrop-filter: blur(20px);
+    padding: 25px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+
+.theme-switcher {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.theme-switcher span {
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.theme-switcher span:hover {
+    transform: scale(1.2);
+}
+
+
+.progress-ring {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 25px 0;
+}
+
+.ring-wrap {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ring-svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+#progressCircle {
+    cx: 130;
+    cy: 130;
+    r: 115;
+    fill: none;
+    stroke: rgba(255,255,255,0.55);
+    stroke-width: 12;
+    stroke-linecap: round;
+    stroke-dasharray: 750;
+    stroke-dashoffset: 750;
+    transition: stroke-dashoffset 0.4s linear;
+}
+
+.timer-display {
+    position: absolute;
+    font-size: 42px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+
+.mode-select {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.mode-btn {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    padding: 8px 14px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.2s;
+}
+
+.mode-btn:hover {
+    background: rgba(255,255,255,0.25);
+    transform: translateY(-2px);
+}
+
+
+.input-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 12px;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: rgba(255,255,255,0.15);
+    color: white;
+}
+
+input::placeholder {
+    color: #e5dfff;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.custom-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.custom-box input {
+    width: 70px;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.buttons button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    background: rgba(255,255,255,0.12);
+    transition: 0.3s;
+}
+
+.buttons button:hover {
+    background: rgba(255,255,255,0.3);
+    transform: translateY(-2px);
+}
+
+
+.quote {
+    font-size: 1rem;
+    opacity: 0.85;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 480px) {
+    .app {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .ring-wrap {
+        width: 220px;
+        height: 220px;
+    }
+
+    #progressCircle {
+        cx: 110;
+        cy: 110;
+        r: 95;
+    }
+
+    .timer-display {
+        font-size: 34px;
+    }
+
+    .title {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .ring-wrap {
+        width: 190px;
+        height: 190px;
+    }
+
+    .timer-display {
+        font-size: 28px;
+    }
+}
